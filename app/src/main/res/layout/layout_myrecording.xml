@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_videoPicture_myrecord"
+        android:layout_width="59.5dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/film_ico" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/recording_linebg"
+            android:gravity="center"
+            android:text="播放"
+            android:textColor="#999999"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <CheckBox
+            android:id="@+id/cb_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/options_solid_bg"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_videoName_myrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="影片名"
+            android:textColor="#999999"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="录音得分"
+            android:textColor="#999999"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <TextView
+            android:id="@+id/tv_score_myrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="90分"
+            android:textColor="@color/Weakpink"
+            android:textSize="20sp"
+            tools:fontPath="fonts/simyou.ttf" />
+    </RelativeLayout>
+
+</LinearLayout>

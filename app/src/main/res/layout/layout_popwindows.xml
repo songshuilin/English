@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/li_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/gv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:overScrollMode="never"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/promptdialog_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/open_camera"
+                style="@style/userCenter"
+                android:gravity="center"
+                android:text="@string/Taking_pictures"
+                android:textColor="#007aff"
+                android:textSize="17sp"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <View
+                style="@style/LineView"
+                android:background="@color/gainsboro" />
+
+            <TextView
+                android:id="@+id/open_album"
+                style="@style/userCenter"
+                android:gravity="center"
+                android:text="@string/Select_albume"
+                android:textColor="#007aff"
+                android:textSize="17sp"
+                tools:fontPath="fonts/simyou.ttf" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/photo_down"
+            style="@style/userCenter"
+            android:layout_marginTop="1.5dp"
+            android:background="@drawable/promptdialog_bg"
+            android:gravity="center"
+            android:text="@string/tx_cancel"
+            android:textColor="#007aff"
+            android:textSize="17sp"
+            tools:fontPath="fonts/simyou.ttf" />
+    </LinearLayout>
+
+</RelativeLayout>

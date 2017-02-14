@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lijunsai="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent_white" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/movieround" />
+
+                <net.naucu.englishxianshi.widget.view.CircleImageView
+                    android:id="@+id/ci_cover"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/books"
+                    lijunsai:civ_border_color="@color/white"
+                    lijunsai:civ_border_width="1.5dp" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_moviename"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="测试电影测试电影测试电影测试电影测试电影测试电影"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:fontPath="fonts/simyou.ttf" />
+
+
+            <TextView
+                android:id="@+id/tv_movieIntroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:lineSpacingExtra="6dp"
+                android:lineSpacingMultiplier="1"
+                android:text="TextViewText测试电影测试电影测试电影ewT"
+                android:textColor="#C8ffffff"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <RadioButton
+                android:id="@+id/rb_gomovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/dp_7"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/bf_play"
+                android:gravity="center"
+                android:text=" 观看"
+                android:textColor="#59fff9"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/rb_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_moviename"
+                android:textColor="#f9af4e"
+                tools:fontPath="fonts/simyou.ttf" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

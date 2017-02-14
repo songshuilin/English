@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="130dp"
+    android:background="#c444"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/rollplayer_popText"
+            android:layout_width="wrap_content"
+            tools:fontPath="fonts/simyou.ttf"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_corner_white"
+            android:text="录音开始前画面是否暂停？" />
+
+        <CheckBox
+            android:id="@+id/cb_beginstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/checkbox"
+            android:button="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/rollplayer_popText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:fontPath="fonts/simyou.ttf"
+            android:background="@drawable/stroke_corner_white"
+            android:text="录音过程中是否限制时间？" />
+
+        <CheckBox
+            android:id="@+id/cb_timelimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/checkbox"
+            android:button="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/rollplayer_popText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:fontPath="fonts/simyou.ttf"
+            android:background="@drawable/stroke_corner_white"
+            android:text="每句录完后是否暂停试听？" />
+
+        <CheckBox
+            android:id="@+id/cb_endstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/checkbox"
+            android:button="@null" />
+    </LinearLayout>
+</LinearLayout>

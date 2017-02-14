@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/LineView"
+        android:background="@color/transparent_white" />
+
+    <EditText
+        android:id="@+id/ed_inputword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入语法名词或单词"
+        android:maxHeight="180dp"
+        android:minHeight="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17sp"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <LinearLayout
+        android:id="@+id/jiexiline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/transparent_black">
+
+        <TextView
+            android:id="@+id/tv_masa_yufa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_shape_jiexi"
+            android:gravity="center"
+            android:text="MASA语法"
+            android:textSize="14sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <TextView
+            android:id="@+id/tv_chuantong_yufa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_shape_jiexi"
+            android:gravity="center"
+            android:text="传统语法"
+            android:textSize="14sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <TextView
+            android:id="@+id/tv_yufa_jinjie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_shape_jiexi"
+            android:gravity="center"
+            android:text="语法进阶"
+            android:textSize="14sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <TextView
+
+            android:id="@+id/tv_danci_bianxi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_shape_jiexi"
+            android:gravity="center"
+            android:text="单词辨析"
+            android:textSize="14sp"
+            tools:fontPath="fonts/simyou.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

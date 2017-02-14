@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="93dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/Im_CoverImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6.5dp"
+            android:layout_marginLeft="6.9dp"
+            android:layout_marginRight="6.9dp"
+            android:layout_marginTop="3.5dp"
+            android:src="@drawable/books" />
+
+        <ImageView
+            android:id="@+id/iv_coverview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bookbox" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tv_booksname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="电子书名称"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="作者"
+            android:textColor="@color/white"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <RatingBar
+                android:id="@+id/rb_score"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="8.9"
+                android:textColor="#f9af4e"
+                android:textSize="12sp"
+                tools:fontPath="fonts/simyou.ttf" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="评价"
+            android:textColor="@color/white"
+            tools:fontPath="fonts/simyou.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

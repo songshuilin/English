@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/children"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:maxWidth="235dp"
+        android:paddingLeft="13dp"
+        tools:fontPath="fonts/simyou.ttf"
+        android:paddingRight="10dp"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!--android:background="@drawable/select_item_children"-->
+
+    <TextView
+        android:id="@+id/fanyi"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:gravity="center"
+        tools:fontPath="fonts/simyou.ttf"
+        android:text=""
+        android:textColor="#fff" />
+
+    <!--android:background="@drawable/select_item_childrenclick"-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/hr1"
+            android:layout_width="6dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+
+        <View
+            android:id="@+id/hr2"
+            android:layout_width="6dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="57dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+
+        <View
+            android:id="@+id/hr3"
+            android:layout_width="6dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="78dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme, dependent on API level. This theme is replaced by AppBaseTheme
+        from res/values-vXX/styles.xml on newer devices. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Theme customizations available in newer API levels can go in res/values-vXX/styles.xml,
+            while customizations related to backward-compatibility can go here. -->
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go
+            here. -->
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+
+
+    <style name="MenuRadioButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">70dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingRight">27dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/menubutton_select</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="MenuRadioButtonStyle1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+        <item name="android:background">@drawable/menubutton_select</item>
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.Holo.Light.RatingBar">
+        <item name="android:maxHeight">11dip</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_full_holo_light</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_full_holo_light</item>
+        <item name="android:minHeight">11dip</item>
+        <item name="android:numStars">5</item>
+        <item name="android:rating">0.0</item>
+        <item name="android:stepSize">0</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="LineView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="LineView1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1px</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="userCenter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="UserEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="PromptDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/promptdialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="LoadingDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loadingdialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="rollplayer_popText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#55dddd</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="moreset_popText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="srtbody_select" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_srtbody_bg</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+
+    </style>
+
+    <style name="srtparagraph_select" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_srtparagraph_bg</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="fontPath">fonts/simyou.ttf</item>
+    </style>
+</resources>

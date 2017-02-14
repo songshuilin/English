@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RRALL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/score_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/score_star"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="20fen"
+            android:textColor="#fff"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <TextView
+            android:id="@+id/tv_score_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="您的录音击败了34%的用户"
+            android:textColor="#ff7"
+            android:textSize="12sp"
+            tools:fontPath="fonts/simyou.ttf" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/record_bg">
+
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/record_selector" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/remove" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

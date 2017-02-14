@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">英语鲜师</string>
+    <string name="tx_login">登录</string>
+    <string name="loginhint">请输入手机号</string>
+    <string name="passwordhint">请输入密匙</string>
+    <string name="retrievehint">请输入手机号</string>
+    <string name="tv_InviteCode">邀请码输入框(选填)</string>
+    <string name="tx_registered">注册</string>
+    <string name="retrievepassword">找回密匙</string>
+    <string name="inputVerificationhint">输入验证码</string>
+    <string name="obtainVerificationhint">获取验证码</string>
+    <string name="txnextstep">下一步</string>
+    <string name="Pleaseenterpasswordhint">请输入密匙</string>
+    <string name="Pleaseenteragainpasswordhint">请再次确认密匙</string>
+    <string name="tv_ImmediatelyUnlock">立即解锁</string>
+    <string name="tv_prompt">一次性购买,英语鲜师的全部功能即可拥有。</string>
+    <string name="txcomplete">完成</string>
+    <string name="pleaseenternewpasswordhint">请输入新密匙</string>
+    <string name="pleaseenteragainnewpasswordhint">请输入再次新密匙</string>
+    <string name="tx_translation">翻译</string>
+    <string name="tx_Grammartranslation">语法分析</string>
+    <string name="tx_SyntaxAnalysis">语法分析</string>
+    <string name="tx_Electronicdictionary">电子词典</string>
+    <string name="tx_Readandreread">朗读复读</string>
+    <string name="tx_softwarepay">解锁英语鲜师全部功能</string>
+    <string name="tx_MyYingKu">我的影库</string>
+    <string name="tx_Mybookshelf">我的书架</string>
+    <string name="tx_Learningnotes">学习笔记</string>
+    <string name="tx_Myrecording">  我的配音</string>
+    <string name="tx_masayufa">MASA语法</string>
+    <string name="tx_MoreSettings">设置</string>
+    <string name="tx_DownloadManager">下载管理</string>
+    <string name="tx_usercenter">个人中心</string>
+    <string name="tx_traffics">使用流量下载时提醒我</string>
+    <string name="tx_push">消息推送</string>
+    <string name="tx_readingset">正音朗读播放设定</string>
+    <string name="tx_about">关于我们</string>
+    <string name="tx_unlock_features">解锁全部功能</string>
+    <string name="tx_feedback">意见反馈</string>
+    <string name="tx_clean">一键清理缓存</string>
+    <string name="tx_withdrawaccount">退出登录</string>
+    <string name="tx_editor">编辑</string>
+    <string name="tx_bookcase">书架</string>
+    <string name="tx_cancel">取消</string>
+    <string name="tx_determine">确定</string>
+    <string name="tx_prompt">提示</string>
+    <string name="tx_exit">您确定要退出吗？</string>
+    <string name="tx_inputword">请触摸输入单词</string>
+    <string name="exit_user">您确定要退出当前用户吗？</string>
+    <string name="Taking_pictures">拍照</string>
+    <string name="Select_albume">从相册中选取图片</string>
+    <string name="save">保存</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="modifygender">修改性别</string>
+    <string name="modifynickname">修改昵称</string>
+    <string name="userhead">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="Securitycenter">安全中心</string>
+    <string name="second_title">修改后的标题</string>
+    <string name="iflytek_id">56582874</string>
+    <string name="tv_about">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;英语鲜师是由北京拿古电子科技有限公司历时3年研发而成，英语鲜师-24小时问答型终极智能英语教师，帮您分析语句的语法结构，讲解语法知识点，翻译，辞典，正宗美式发音，海量英文影视及书籍供您学习。</string>
+    <string name="tv_org">北京拿古电子科技有限公司</string>
+    <string name="tv_versionnumber">版本号:V$version$</string>
+    <string name="nologin">未登录</string>
+    <string name="tv_eadlanguage">朗读语度</string>
+    <string name="tv_readcharacters">朗读角色</string>
+    <string name="fast">快</string>
+    <string name="the">中</string>
+    <string name="slow">慢</string>
+    <string name="noNickname">小贴士：据估算每部电影含有2000个左右不同的单词</string>
+    <string name="didnotfill">未填写</string>
+    <string-array name="tx_booksCategory">
+        <item>初级</item>
+        <item>中级</item>
+        <item>高级</item>
+        <item>全部</item>
+
+    </string-array>
+    <string name="tx_loginpassword">登录密匙(修改您的登录密匙)</string>
+    <string name="tx_numberphone">手机号(修改您的手机号)</string>
+    <string name="tx_deleteinformation">您确定要删除吗?</string>
+    <string name="tx_Paytreasure">支付宝</string>
+    <string name="tx_WeChat">微信</string>
+    <string name="tx_pay">支付</string>
+    <string name="remove">移除</string>
+    <string name="stop">停止</string>
+    <string name="stop1">停止</string>
+    <string name="start">开始下载</string>
+    <string name="hideChinese">隐藏中文</string>
+    <string name="hideEnglish">隐藏英文</string>
+    <string name="inputModel">输入模式</string>
+    <string name="textSize">字体设置</string>
+    <string name="auto">智能词典</string>
+    <string name="manual">手动词典</string>
+    <string name="testvideo">试看电影</string>
+    <string name="testbook">试看小说</string>
+    <string name="paynotify">支付后方可使用</string>
+    <string name="yufa">语法解析</string>
+    <string name="yuju">语句结构</string>
+    <string name="danci">单词辨析</string>
+    <string name="masadescribe">MASA将英语语法公式化，让你对英语语法有一个更全面的认识，是学习语法的基础。在这，我就不为你筛选教材了，建议你花一点时间，通读MASA语法。</string>
+
+
+</resources>

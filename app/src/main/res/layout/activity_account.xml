@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_registered_bg"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/account_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/bar_back"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/backs" />
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:fontPath="fonts/Roboto-Bold.ttf" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_weight="9"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/account_phone_layout"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/account_phone_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_35"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/login_registered_liftup"
+                        android:drawableLeft="@drawable/login_user"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:hint="@string/retrievehint"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColorHint="@color/transparent_white"
+                        tools:fontPath="fonts/simyou.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/account_smscode_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_registered_liftup"
+                        android:drawableLeft="@drawable/login_lock"
+                        android:hint="@string/inputVerificationhint"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColorHint="@color/transparent_white"
+                        tools:fontPath="fonts/simyou.ttf" />
+
+                    <Button
+                        android:id="@+id/account_obtain_smscode_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_registered_buttom"
+                        android:text="@string/obtainVerificationhint"
+                        android:textColor="@drawable/login_registered_button_text_click"
+                        tools:fontPath="fonts/simyou.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/account_next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/login_registered_buttom"
+                        android:text="@string/txnextstep"
+                        android:textColor="@drawable/login_registered_button_text_click"
+                        tools:fontPath="fonts/simyou.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                tools:fontPath="fonts/simyou.ttf" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/account_password_layout"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/account_new_passowrd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/login_registered_liftup"
+                android:drawableLeft="@drawable/login_lock"
+                android:drawablePadding="5dp"
+                android:hint="@string/Pleaseenterpasswordhint"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColorHint="@color/transparent_white"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <EditText
+                android:id="@+id/account_comfirm_passowrd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login_registered_liftup"
+                android:drawableLeft="@drawable/login_lock"
+                android:drawablePadding="5dp"
+                android:hint="@string/Pleaseenteragainpasswordhint"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColorHint="@color/transparent_white"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <Button
+                android:id="@+id/account_complete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login_registered_buttom"
+                android:text="@string/txcomplete"
+                android:textColor="@drawable/login_registered_button_text_click"
+                tools:fontPath="fonts/simyou.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

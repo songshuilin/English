@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/im_cover"
+                    android:layout_width="105dp"
+                    android:layout_height="150dp"
+                    android:background="@color/antiquewhite" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_moviename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="朗读者"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:fontPath="fonts/simyou.ttf" />
+
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="8.9"
+                        android:textColor="#f9af4e"
+                        tools:fontPath="fonts/simyou.ttf" />
+
+                    <TextView
+                        android:id="@+id/tv_moviedirector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="导演"
+                        android:textColor="@color/white"
+                        tools:fontPath="fonts/simyou.ttf" />
+
+                    <TextView
+                        android:id="@+id/tv_moviesource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="美国    120分钟"
+                        android:textColor="@color/white"
+                        tools:fontPath="fonts/simyou.ttf" />
+
+                    <TextView
+                        android:id="@+id/tv_movietype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="动作类"
+                        android:textColor="@color/white"
+                        tools:fontPath="fonts/simyou.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/addYingKu"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_watch_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="缓存本地"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/bt_watch"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_watch_button"
+                android:text="边下边播"
+                android:textColor="#fff"
+                tools:fontPath="fonts/simyou.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <GridView
+            android:id="@+id/gl_videoset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="7"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="简介"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_movieintroduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    tools:fontPath="fonts/simyou.ttf"
+                    android:lineSpacingExtra="10dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

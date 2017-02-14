@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cehua_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/fl_userheadview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/im_user_head"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/books" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_Nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="-10dp"
+            android:gravity="center"
+            android:text="@string/nologin"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <View
+            style="@style/LineView"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RadioButton
+                android:id="@+id/br_translation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/menubutton_select"
+                android:button="@null"
+                android:drawablePadding="-18dp"
+                android:drawableTop="@drawable/translation_n"
+                android:gravity="center"
+                android:text="@string/tx_translation"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_Grammartranslation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/menubutton_select"
+                android:button="@null"
+                android:drawablePadding="-18dp"
+                android:drawableTop="@drawable/syntaxanalysis_n"
+                android:gravity="center"
+                android:text="@string/tx_Grammartranslation"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_Electronicdictionary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/menubutton_select"
+                android:button="@null"
+                android:drawablePadding="-18dp"
+                android:drawableTop="@drawable/electronicdictionary_n"
+                android:gravity="center"
+                android:text="@string/tx_Electronicdictionary"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/LineView"
+            android:layout_marginTop="-15dp"
+            android:background="@color/transparent_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <Button
+                android:id="@+id/bt_softwarepay"
+                style="@style/MenuRadioButtonStyle"
+                android:background="@drawable/unlock_functions"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:fontPath="fonts/simyou.ttf"/>
+
+            <Button
+                android:id="@+id/rb_Readandreread"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/menubutton_select"
+                android:drawableLeft="@drawable/fudu"
+                android:paddingLeft="70dp"
+                android:paddingRight="27dp"
+                android:text="@string/tx_Readandreread"
+                android:textSize="18sp"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <Button
+                android:id="@+id/rb_MyYingKu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/menubutton_select"
+                android:drawableLeft="@drawable/yingku"
+                android:paddingLeft="70dp"
+                android:paddingRight="27dp"
+                android:text="@string/tx_MyYingKu"
+                android:textSize="18sp"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <Button
+                android:id="@+id/rb_Mybookshelf"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/menubutton_select"
+                android:drawableLeft="@drawable/shujia"
+                android:paddingLeft="70dp"
+                android:paddingRight="27dp"
+                android:text="@string/tx_Mybookshelf"
+                android:textSize="18sp"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <Button
+                android:id="@+id/rb_Learningnotes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:background="@drawable/menubutton_select"
+                android:drawableLeft="@drawable/biji"
+                android:paddingLeft="70dp"
+                android:paddingRight="27dp"
+                android:text="@string/tx_Learningnotes"
+                android:textSize="18sp"
+                tools:fontPath="fonts/simyou.ttf" />
+
+            <Button
+                android:id="@+id/rb_Myrecording"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:drawablePadding="-5dp"
+                android:background="@drawable/menubutton_select"
+                android:drawableLeft="@drawable/peiyin"
+                android:paddingLeft="70dp"
+                android:paddingRight="27dp"
+                android:text=" 我的配音"
+                android:textSize="18sp"
+                tools:fontPath="fonts/simyou.ttf" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:id="@+id/rb_masayufa"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:background="@drawable/menubutton_select"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:drawableLeft="@drawable/yufa"
+                        android:gravity="center|right"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="7dp"
+                        android:text="MASA"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        tools:fontPath="fonts/simyou.ttf" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:drawablePadding="30dp"
+                        android:gravity="center|left"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:text="语法"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/rb_MoreSettings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/menubutton_select"
+                    android:drawableLeft="@drawable/shezhi"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/tx_MoreSettings"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    tools:fontPath="fonts/simyou.ttf" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/rb_DownloadManager"
+                style="@style/MenuRadioButtonStyle"
+                android:drawableLeft="@drawable/localdownload"
+                android:text="@string/tx_DownloadManager"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

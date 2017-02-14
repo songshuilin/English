@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        tools:fontPath="fonts/simyou.ttf"/>
+
+    <LinearLayout
+        android:id="@+id/aredata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/lv_homemoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent_white"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_nodata" />
+</LinearLayout>

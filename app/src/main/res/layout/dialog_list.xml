@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/yuanjiao_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#333333"
+        android:text="提示：" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:text="请您选择单句进行解析，或者取消并自行编辑。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#6b000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <ListView
+        android:id="@+id/dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scrollbars="none" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#6b000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="取消"
+        android:clickable="true"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

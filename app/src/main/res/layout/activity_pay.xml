@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        tools:fontPath="fonts/simyou.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付金额"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fb6464"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <RelativeLayout
+        android:id="@+id/ll_Paytreasure"
+        style="@style/userCenter"
+        android:background="@drawable/button_select"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/zhifu" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="@string/tx_Paytreasure"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <RelativeLayout
+        android:id="@+id/ll_WeChat"
+        style="@style/userCenter"
+        android:background="@drawable/button_select"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/weixin" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="@string/tx_WeChat"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+</LinearLayout>

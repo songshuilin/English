@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <LinearLayout style="@style/userCenter">
+
+        <RadioGroup
+            android:id="@+id/rg_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_analyse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/notes_choose"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="语法分析"
+                android:textColor="@color/notes_choose_text" />
+
+            <RadioButton
+                android:id="@+id/rb_translate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/notes_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="翻译"
+                android:textColor="@color/notes_choose_text" />
+
+            <RadioButton
+                android:id="@+id/rb_word"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/notes_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="电子词典"
+                android:textColor="@color/notes_choose_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <ListView
+        android:id="@+id/lv_Learningnotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/layout_delete" />
+</LinearLayout>

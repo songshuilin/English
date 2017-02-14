@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="blocksDescendants">
+
+    <ListView
+        android:id="@+id/ebook_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="0px"
+        android:fastScrollEnabled="true"
+        android:listSelector="@android:color/transparent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back_ebook"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/back_ebook" />
+
+        <LinearLayout
+            android:id="@+id/ll_topcontrol_ebook"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/corner_blue"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="5dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/tv_readall_ebook"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/readall_b" />
+
+            <ImageView
+                android:id="@+id/tv_repeat_ebook"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/repeat_b" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_flag_ebook"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/label_ebook"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottomcontrol_ebook"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ee40a0ff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_translate_ebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/video_translate_n" />
+
+        <ImageView
+            android:id="@+id/iv_edic_ebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/video_edic_n" />
+
+        <ImageView
+            android:id="@+id/iv_read_ebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/video_read_n" />
+
+        <ImageView
+            android:id="@+id/iv_analysis_ebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/video_analysis_n" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_moreset_ebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_moreset_n" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

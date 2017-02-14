@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="com.fght.videoplayer">
+
+    <uses-sdk tools:overrideLibrary="com.fght.videoplayer_arm64" />
+
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/web_jjxq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:scrollbars="none"/>
+
+    <ListView
+        android:id="@+id/listyufajj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@color/transparent_black" />
+</LinearLayout>

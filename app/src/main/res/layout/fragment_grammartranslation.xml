@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" >
+
+    <!--<View-->
+        <!--style="@style/LineView"-->
+        <!--android:background="@color/transparent_white" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            tools:fontPath="fonts/simyou.ttf"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_loading_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#456489"
+        android:padding="20dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

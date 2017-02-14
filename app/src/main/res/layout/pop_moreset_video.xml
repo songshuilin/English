@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_moreset_videopop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_videomoreset_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_hideChinese_video"
+        style="@style/moreset_popText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/stroke_corner_white"
+        android:text="@string/hideChinese"
+        tools:fontPath="fonts/simyou.ttf"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hideEnglish_video"
+        style="@style/moreset_popText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke_corner_white"
+        android:text="@string/hideEnglish"
+        android:textColor="#ffffff"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <TextView
+        android:id="@+id/tv_inputMode_video"
+        style="@style/moreset_popText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke_corner_white"
+        android:gravity="center"
+        android:text="@string/auto"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <TextView
+        android:id="@+id/tv_ChoiceModel_video"
+        style="@style/moreset_popText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke_corner_white"
+        android:gravity="center"
+        android:text="单选字幕"
+        tools:fontPath="fonts/simyou.ttf" />
+
+
+    <TextView
+        android:id="@+id/tv_textSize_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke_corner_white"
+        android:text="@string/textSize"
+        android:textColor="#fff"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <TextView
+        android:id="@+id/tv_speed_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke_corner_white"
+        android:text="语速设置"
+        android:textColor="#fff"
+        tools:fontPath="fonts/simyou.ttf" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <EditText
+        android:id="@+id/edit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#F3F3F3"
+        android:gravity="left"
+        android:hint="请输入反馈信息"
+        android:textColor="#000000"
+        android:textColorHint="#868686"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <Button
+        android:id="@+id/btn_submit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:background="#009CE4"
+        android:text="提交"
+        tools:fontPath="fonts/simyou.ttf" />
+
+
+</LinearLayout>

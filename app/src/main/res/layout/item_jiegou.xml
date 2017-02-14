@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/select1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <ImageView
+        android:id="@+id/im_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/im_ex"
+        android:text="原句"
+        android:visibility="gone"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tools:fontPath="fonts/simyou.ttf" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/yutai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <TextView
+        android:id="@+id/yutaijiegou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:fontPath="fonts/simyou.ttf" />
+</LinearLayout>

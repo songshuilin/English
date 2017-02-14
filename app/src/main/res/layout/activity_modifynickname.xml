@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <ListView
+        android:id="@+id/lv_xiaotieshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+    </ListView>
+
+</LinearLayout>

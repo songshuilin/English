@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lijunsai="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <View
+        style="@style/LineView"
+        android:layout_marginTop="10dp"
+        android:background="@color/gainsboro" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nickname"
+        style="@style/userCenter"
+        android:background="@drawable/button_select">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨小贴士"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <RelativeLayout
+        android:id="@+id/rl_modifygender"
+        style="@style/userCenter"
+        android:background="@drawable/button_select">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助视频"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <RelativeLayout
+        android:id="@+id/rl_Securitycenter"
+        style="@style/userCenter"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Securitycenter"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/next" />
+    </RelativeLayout>
+
+    <View
+        style="@style/LineView"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gainsboro" />
+
+</LinearLayout>

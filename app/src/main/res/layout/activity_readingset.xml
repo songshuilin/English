@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.app.myTool.ActionTitleBarWidget
+        android:id="@+id/titlebar"
+        tools:fontPath="fonts/simyou.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <LinearLayout
+        style="@style/userCenter"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_eadlanguage"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            style="@style/userCenter"
+            android:paddingRight="0dp">
+
+            <RadioGroup
+                android:id="@+id/rg_eadlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_eadlanguage_slow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/readingsetspeed_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/slow"
+                    android:textColor="@color/readingsetspeed_text" />
+
+                <RadioButton
+                    android:id="@+id/rb_eadlanguage_the"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/readingsetspeed_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/the"
+                    android:textColor="@color/readingsetspeed_text" />
+
+                <RadioButton
+                    android:id="@+id/rb_eadlanguage_fast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/readingsetspeed_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/fast"
+                    android:textColor="@color/readingsetspeed_text" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+    <LinearLayout
+        style="@style/userCenter"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_readcharacters"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            style="@style/userCenter"
+            android:paddingRight="0dp">
+
+            <RadioGroup
+                android:id="@+id/rg_readcharacters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_readcharacters_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/readingsetspeed_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/male"
+                    android:textColor="@color/readingsetspeed_text" />
+
+                <RadioButton
+                    android:id="@+id/rb_readcharacters_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/readingsetspeed_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/female"
+                    android:textColor="@color/readingsetspeed_text" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/LineView"
+        android:background="@color/gainsboro" />
+
+</LinearLayout>

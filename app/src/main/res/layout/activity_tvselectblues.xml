@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/tv_backs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Tv_titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                tools:fontPath="fonts/simyou.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_bianji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:text="编辑"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                tools:fontPath="fonts/simyou.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/ll2"
+        style="@style/LineView"
+        android:layout_below="@+id/ll1"
+        android:background="@color/gainsboro" />
+
+    <GridView
+        android:id="@+id/tvGradView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="3" />
+
+    <LinearLayout
+        android:id="@+id/bottom_choice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/delete_button_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete" />
+
+        <TextView
+            android:id="@+id/tv_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:fontPath="fonts/simyou.ttf" />
+    </LinearLayout>
+</RelativeLayout>

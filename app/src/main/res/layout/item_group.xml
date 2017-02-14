@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:fontPath="fonts/simyou.ttf"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/im_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/group" />
+
+</RelativeLayout>

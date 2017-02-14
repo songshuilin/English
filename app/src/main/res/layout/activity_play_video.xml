@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/video_fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/err_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/err_back"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/backs" />
+
+                <ProgressBar
+                    android:id="@+id/err_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:background="#ffaa9999"
+                    android:id="@+id/err_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/err_bar"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:fontPath="fonts/simyou.ttf" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.fght.videoplayer.widget.media.VideoView
+                    android:id="@+id/video_view_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <com.fght.videoplayer.widget.media.VideoView
+                    android:id="@+id/video_view_02"
+                    android:layout_width="1px"
+                    android:layout_height="1px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+
+            android:id="@+id/subtitle_fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/video_fragment_layout"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/subtitle_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45dp"
+                android:background="#dddddd"
+                android:divider="#00000000"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/video_subtitle_operation_01_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/video_subtitle_operation_include_layout"
+                    layout="@layout/video_function" />
+
+                <RelativeLayout
+                    android:id="@+id/video_subtitle_operation_record_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f555"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/pb_countdown_record"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_prompt_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="准备录音"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            tools:fontPath="fonts/simyou.ttf" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_xiaoyuandian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="130dp"
+                        android:text="●"
+                        android:textColor="#dd7777"
+                        android:visibility="gone"
+                        tools:fontPath="fonts/simyou.ttf" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_record_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_score"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_record_01"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zhezhaoceng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/zhezhaoceng"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

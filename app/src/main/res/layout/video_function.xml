@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_function_bg"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/play_video_bg"
+    android:gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_resume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/video_resume_n" />
+
+    <ImageView
+        android:id="@+id/iv_rollPlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/video_rollplayer_n" />
+
+    <ImageView
+        android:id="@+id/iv_fullSrt"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/video_srtfull_n" />
+
+    <ImageView
+        android:id="@+id/iv_srtSelect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/xuanqu_zimu" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/iv_moreset_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/video_moreset_n"
+            android:layout_weight="0.60" />
+    </LinearLayout>
+
+</LinearLayout>

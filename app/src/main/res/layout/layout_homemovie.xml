@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gdbj"
+        android:gravity="center_vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/tv_Moviecategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_classification"
+            android:layout_width="17sp"
+            android:layout_height="17sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jump" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_classification"
+            android:layout_toStartOf="@+id/iv_classification"
+            android:text="更多视频"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:fontPath="fonts/simyou.ttf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="15dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent_white" />
+    </RelativeLayout>
+
+    <com.app.myTool.FullListview
+        android:id="@+id/movieChildlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="15dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fff"
+        android:visibility="visible"
+        tools:fontPath="fonts/simyou.ttf" />
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_registered_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/account_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageButton
+            android:id="@+id/bar_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            tools:fontPath="fonts/simyou.ttf"
+            android:src="@drawable/backs" />
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="修改手机号"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/login_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/update_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_registered_liftup"
+            android:drawableLeft="@drawable/login_user"
+            android:drawablePadding="5dp"
+            android:hint="请输入新手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            tools:fontPath="fonts/simyou.ttf"
+            android:textColorHint="@color/transparent_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/update_phone_smscode_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                tools:fontPath="fonts/simyou.ttf"
+                android:background="@drawable/login_registered_liftup"
+                android:drawableLeft="@drawable/login_lock"
+                android:hint="@string/inputVerificationhint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColorHint="@color/transparent_white" />
+
+            <Button
+                android:id="@+id/update_phone_obtain_smscode_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                tools:fontPath="fonts/simyou.ttf"
+                android:background="@drawable/login_registered_buttom"
+                android:text="@string/obtainVerificationhint"
+                android:textColor="@drawable/login_registered_button_text_click" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/update_phone_comple_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            tools:fontPath="fonts/simyou.ttf"
+            android:background="@drawable/login_registered_buttom"
+            android:text="修改"
+            android:textColor="@drawable/login_registered_button_text_click" />
+    </LinearLayout>
+
+</LinearLayout>

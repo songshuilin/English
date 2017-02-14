@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tishi"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提示："
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/shuoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="请您选择单句进行解析，或者取消并自行编辑。"
+        />
+
+</LinearLayout>

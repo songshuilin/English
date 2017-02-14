@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gdbj"
+        android:gravity="center_vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/tv_elevisionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:fontPath="fonts/simyou.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_jump"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jump" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_jump"
+            android:layout_toStartOf="@+id/iv_jump"
+            android:text="更多图书"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:fontPath="fonts/simyou.ttf" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gr_booksChild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dip"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:numColumns="3"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>

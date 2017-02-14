@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <net.naucu.englishxianshi.widget.view.SelectTextview
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c000"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:padding="15dp"
+        android:text="fght"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        tools:fontPath="fonts/simyou.ttf" />
+
+    <ImageView
+        android:id="@+id/chahao"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right|top"
+        android:background="#c000"
+        android:src="@drawable/error" />
+</FrameLayout>
